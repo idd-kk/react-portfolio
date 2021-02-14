@@ -1,38 +1,190 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700&display=swap');
+
+
+html {
+  background-color:#fff; 
+}
+
+.header-color {
+  background:  #d8ffff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #d8ffff 75%,  #7df9ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #d8ffff 75%,  #7df9ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-link {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1rem !important;
+  text-align: center;
+  color: #f74902 !important;
+  margin: 0.5rem 0 0 0 !important;
+}
+
+h1 {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 2.5rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1rem !important;
+  color: #f74902;
+
+  margin: 0 !important;
+}
+
+h2 {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 2rem !important;
+  line-height: 3rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1rem !important;
+  color: #0c304a;
+
+  margin: 0 !important;
+}
+
+h3 {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 1.75rem !important;
+  line-height: 2.75rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.1rem !important;
+  color: #9e2c1d;
+
+  margin: 0 !important;
+}
+
+
+h4 {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 1.5rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1rem !important;
+  color: #0c304a;
+
+  margin: 0 !important;
+}
+
+p {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 1.5rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01rem !important;
+  text-align: start;
+  color: #0c304a;
+
+  margin: 0 !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 15rem auto auto;
+  grid-gap: 2rem;
+  grid-template-areas: 
+              " title"
+              " pic  "
+              " main ";
+  justify-items: center;
+  margin: 2rem;
+}
+
+.title {
+  grid-area: title;
+  place-self: center;
+}
+
+.tag {
+  width: 30rem;
+}
+
+.pic  {
+  grid-area: pic;
+}
+
+.content {
+  grid-area: main;
+}
+
+.banner-box {
+  background-color:#d8ffff;
+  width: 50%;
+  border-radius: 2rem;
+  padding: 4rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*** landing page css ***/
+.logo {
+  width: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.land-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+              "neuron"
+              "intro";
+  justify-items: center;
+  margin: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.neuron-img {
+  grid-area: neuron;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.neuron {
+  height: 70vh;
+  padding: 2rem 0 4rem 0;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro {
+  grid-area: intro;
+  width: 70vw;
+}
+
+
+/*** About page css ***/
+.avatar-img {
+  height: 20rem;
+  padding: 3rem;
+}
+
+
+/*** Projects Page css ***/
+.project-grid {
+  display: grid;
+  justify-items: center;
+}
+
+.port-img {
+  max-width: 80vw;
+  max-height: 70vh;
+  padding: 3rem;
+  margin: auto;
+}
+
+
+/*** Contact page css ***/
+.contact-box {
+  background-color:#d8ffff;
+  width: 70vw;
+  border-radius: 2rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+.social-links i {
+  color: #9e2c1d;
+  font-size: 4rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+#mail {
+  padding: 0 0 3rem 0;
 }
