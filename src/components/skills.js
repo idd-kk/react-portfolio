@@ -8,14 +8,13 @@ class Skills extends React.Component
         return(
             <Grid>
 
-                <Cell col={3}>
+                <Cell  col={12} >
                     <div style={{display: 'flex'}}>
                         <h5>{this.props.skill}</h5>
                     </div>
-                </Cell>
-
-                <Cell col={9}>
-                    <ProgressBar style={{margin: 'auto', width: '60%'}} progress={this.props.progress} />
+                    <div style={{padding: '0.5em'}}>
+                        <ProgressBar style={{margin: 'auto', width: '60%'}} progress={this.props.progress} />
+                    </div>
                 </Cell>
 
             </Grid>
