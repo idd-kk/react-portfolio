@@ -3,17 +3,21 @@ import { Grid, Cell, ProgressBar } from 'react-mdl';
 
 class Skills extends React.Component
 {
-    render() {
+    render() 
+    {
         return(
             <Grid>
-                <Cell col={2}>
+
+                <Cell col={3}>
                     <div style={{display: 'flex'}}>
                     {this.props.skill}
                     </div>
                 </Cell>
-                <Cell col={10}>
-                    <ProgressBar style={{margin: 'auto', width: '75%'}} progress={this.props.progress} />
+
+                <Cell col={9}>
+                    <ProgressBar style={{margin: 'auto', width: '60%'}} progress={this.props.progress} />
                 </Cell>
+
             </Grid>
         )
     }
