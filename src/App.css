@@ -66,6 +66,17 @@ h4 {
   margin: 0 !important;
 }
 
+h5 {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1rem !important;
+  color: #f74902;
+
+  margin: 0 !important;
+}
+
 p {
   font-family: 'Tajawal', sans-serif !important;
   font-size: 1.5rem !important;
@@ -81,12 +92,13 @@ p {
 .grid {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 15rem auto auto;
+  grid-template-rows: 15rem auto auto auto;
   grid-gap: 2rem;
   grid-template-areas: 
               " title"
               " pic  "
-              " main ";
+              " main "
+              " other";
   justify-items: center;
   margin: 2rem;
 }
@@ -106,6 +118,10 @@ p {
 
 .content {
   grid-area: main;
+}
+
+.contact {
+  grid-area: other;
 }
 
 .banner-box {
@@ -155,6 +171,27 @@ p {
   padding: 3rem;
 }
 
+.icon {
+  height: 5rem;
+  padding: 3rem;
+}
+
+.contact-box {
+  width: 70vw;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.social-links img {
+  color: #9e2c1d;
+  font-size: 4rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+#mail {
+  padding: 0 0 3rem 0;
+}
+
 
 /*** Projects Page css ***/
 .project-grid {
@@ -169,22 +206,3 @@ p {
   margin: auto;
 }
 
-
-/*** Contact page css ***/
-.contact-box {
-  background-color:#d8ffff;
-  width: 70vw;
-  border-radius: 2rem;
-  padding: 4rem;
-  text-align: center;
-}
-
-.social-links i {
-  color: #9e2c1d;
-  font-size: 4rem;
-  padding: 1rem 1rem 0 1rem;
-}
-
-#mail {
-  padding: 0 0 3rem 0;
-}

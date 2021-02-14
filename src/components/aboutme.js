@@ -2,7 +2,9 @@ import React from 'react';
 //IMG//
 import about from '../IMG/about-tag.svg';
 import krisImg from '../IMG/kris-img-round.png';
-import contact from '../IMG/contact-tag.svg'
+import github from '../IMG/github-logo-squirkle-dark-blue.svg';
+import insta from '../IMG/instagram-icon-squircle-dark-blue.svg';
+import linked from '../IMG/linkedin-icon-dark-blue-01.svg';
 
 
 class About extends React.Component {
@@ -31,41 +33,43 @@ class About extends React.Component {
           </p>
         </div>
 
-        <div className="grid">
+        <div className="content contact contact-box">
 
-          <div className="title">
-            <img
-              src={contact}
-              alt="contact"
-              className="tag"
-            />
-          </div>
+          <h2>Get in touch via:</h2>
+          <h1 id="mail">kris.kay.design@gmail.com</h1>
 
-          <div className="content contact-box">
+          <div className="social-links">
 
-            <h2>Make contact via:</h2>
-            <h1 id="mail">kris.kay.design@gmail.com</h1>
+            <h4>Follow the links to see more of my work</h4>
 
-            <div className="social-links">
+            {/* Github */}
+            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+              <img
+              src={github}
+              alt="GitHub logo"
+              className="icon pic"
+              />
+            </a>
 
-              <h4>Follow the links to see more of my work</h4>
+            {/* Insta */}
+            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+              <img
+              src={insta}
+              alt="Instagram logo"
+              className="icon pic"
+              />
+            </a>
 
-              {/* LinkedIn */}
-              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                <i className="fa fa-linkedin-square" aria-hidden="true" />
-              </a>
+            {/* LinkedIn */}
+            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+              <img
+              src={linked}
+              alt="LinkedIn logo"
+              className="icon pic"
+              />
+            </a>
 
-              {/* Github */}
-              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                <i className="fa fa-github-square" aria-hidden="true" />
-              </a>
-
-              {/* Freecodecamp */}
-              <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                <i className="fa fa-free-code-camp" aria-hidden="true" />
-              </a>
-            </div>
-          </div>
+        </div>
         </div>
       </div>
     )

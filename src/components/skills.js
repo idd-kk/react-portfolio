@@ -10,7 +10,7 @@ class Skills extends React.Component
 
                 <Cell col={3}>
                     <div style={{display: 'flex'}}>
-                    {this.props.skill}
+                        <h5>{this.props.skill}</h5>
                     </div>
                 </Cell>
 
